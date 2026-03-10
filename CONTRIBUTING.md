@@ -1,4 +1,4 @@
-# Contributing to pycomplexity
+# Contributing to bigopy
 
 Thank you for your interest in contributing!
 
@@ -8,6 +8,8 @@ Thank you for your interest in contributing!
 2. Clone your fork locally:
    git clone https://github.com/Zul-Qarnain/pycomplexity.git
    cd pycomplexity
+   git clone https://github.com/Zul-Qarnain/bigopy.git
+   cd bigopy
 
 3. Create a feature branch:
    git checkout -b feature/your-feature-name
