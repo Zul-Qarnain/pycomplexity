@@ -1,6 +1,6 @@
 """
 Sorting algorithm examples
-Run: pycomplexity analyze examples/sorting_examples.py --verbose
+Run: bigopy analyze examples/sorting_examples.py --verbose
 """
 
 

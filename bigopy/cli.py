@@ -1,17 +1,17 @@
 """
-pycomplexity.cli
+bigopy.cli
 ~~~~~~~~~~~~~~~~~
 Command-line interface.
 
 Usage examples::
 
-    pycomplexity analyze my_file.py
-    pycomplexity analyze my_file.py --verbose
-    pycomplexity analyze my_file.py --format json
-    pycomplexity analyze src/ --format json --output report.json
-    pycomplexity analyze my_file.py --only bubble_sort
+    bigopy analyze my_file.py
+    bigopy analyze my_file.py --verbose
+    bigopy analyze my_file.py --format json
+    bigopy analyze src/ --format json --output report.json
+    bigopy analyze my_file.py --only bubble_sort
 
-Run ``pycomplexity --help`` for full usage.
+Run ``bigopy --help`` for full usage.
 """
 
 from __future__ import annotations
@@ -21,10 +21,10 @@ import sys
 from pathlib import Path
 from typing import List, Optional
 
-from pycomplexity.analyzers.module_analyzer import ModuleAnalyzer
-from pycomplexity.models import ModuleResult
-from pycomplexity.reporters.json_reporter import module_to_json
-from pycomplexity.reporters.terminal import TerminalReporter
+from bigopy.analyzers.module_analyzer import ModuleAnalyzer
+from bigopy.models import ModuleResult
+from bigopy.reporters.json_reporter import module_to_json
+from bigopy.reporters.terminal import TerminalReporter
 
 
 # ---------------------------------------------------------------------------
@@ -63,7 +63,7 @@ def cmd_analyze(args: argparse.Namespace) -> int:
     output  = getattr(args, "output", None)
 
     if not files:
-        print("pycomplexity: no Python files found.", file=sys.stderr)
+        print("bigopy: no Python files found.", file=sys.stderr)
         return 1
 
     analyzer = ModuleAnalyzer()
@@ -72,7 +72,7 @@ def cmd_analyze(args: argparse.Namespace) -> int:
 
     for filepath in files:
         if not filepath.exists():
-            print(f"pycomplexity: file not found: {filepath}", file=sys.stderr)
+            print(f"bigopy: file not found: {filepath}", file=sys.stderr)
             exit_code = 1
             continue
 
@@ -118,15 +118,15 @@ def cmd_analyze(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="pycomplexity",
+        prog="bigopy",
         description="Estimate Big-O complexity of Python code via AST analysis.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  pycomplexity analyze my_sort.py
-  pycomplexity analyze src/ --format json --output report.json
-  pycomplexity analyze my_sort.py --verbose
-  pycomplexity analyze my_sort.py --only bubble_sort merge_sort
+  bigopy analyze my_sort.py
+  bigopy analyze src/ --format json --output report.json
+  bigopy analyze my_sort.py --verbose
+  bigopy analyze my_sort.py --only bubble_sort merge_sort
         """,
     )
 

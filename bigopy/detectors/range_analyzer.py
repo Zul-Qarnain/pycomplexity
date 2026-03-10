@@ -1,5 +1,5 @@
 """
-pycomplexity.detectors.range_analyzer
+bigopy.detectors.range_analyzer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Analyzes the BOUND of a loop's range() to detect
 how many extra powers of n the inner loop adds.

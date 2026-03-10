@@ -1,5 +1,5 @@
 """
-pycomplexity.detectors.graph_detector
+bigopy.detectors.graph_detector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Detects graph traversal patterns and classifies them:
 

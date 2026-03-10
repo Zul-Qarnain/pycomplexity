@@ -1,9 +1,9 @@
 """
-pycomplexity.reporters.json_reporter
+bigopy.reporters.json_reporter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serialises ``ModuleResult`` to a JSON-compatible dictionary and to a
 JSON string.  Used by the CLI ``--format json`` option and by tooling
-that embeds pycomplexity as a library.
+that embeds bigopy as a library.
 """
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 from typing import Any, Dict
 
-from pycomplexity.models import FunctionResult, ModuleResult
+from bigopy.models import FunctionResult, ModuleResult
 
 
 def _function_to_dict(result: FunctionResult) -> Dict[str, Any]:

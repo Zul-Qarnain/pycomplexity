@@ -1,16 +1,30 @@
 [build-system]
 requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+build-backend = "setuptools.build_meta:__legacy__"
 
 [project]
-name = "pycomplexity"
+name = "bigopy"
 version = "0.1.0"
-description = "Automatic Big-O complexity estimation for Python code via AST analysis"
+description = "Static AST-based Big-O complexity estimator — no code execution needed"
+readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.9"
+keywords = ["complexity", "big-o", "ast", "static-analysis", "algorithms"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
 dependencies = []
 
 [project.scripts]
-pycomplexity = "pycomplexity.cli:main"
+bigopy = "bigopy.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Zul-Qarnain/bigopy"
+Repository = "https://github.com/Zul-Qarnain/bigopy"
 
 [tool.setuptools.packages.find]
 where = ["."]

@@ -1,6 +1,6 @@
 """
 One example of every complexity class.
-Run: pycomplexity analyze examples/complexity_showcase.py
+Run: bigopy analyze examples/complexity_showcase.py
 """
 
 

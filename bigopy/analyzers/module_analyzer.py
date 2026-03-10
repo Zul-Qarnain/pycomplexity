@@ -1,5 +1,5 @@
 """
-pycomplexity.analyzers.module_analyzer
+bigopy.analyzers.module_analyzer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parses a Python source file (or source string) and runs
 ``FunctionAnalyzer`` on every top-level function and every method in
@@ -16,8 +16,8 @@ import traceback
 from pathlib import Path
 from typing import List, Optional, Union
 
-from pycomplexity.analyzers.function_analyzer import FunctionAnalyzer
-from pycomplexity.models import FunctionResult, ModuleResult
+from bigopy.analyzers.function_analyzer import FunctionAnalyzer
+from bigopy.models import FunctionResult, ModuleResult
 
 
 class ModuleAnalyzer:
@@ -162,7 +162,7 @@ class ModuleAnalyzer:
         """
         Fallback result when analysis throws an unexpected exception.
         """
-        from pycomplexity.models import Complexity, Evidence
+        from bigopy.models import Complexity, Evidence
 
         name = node.name
         if class_name:

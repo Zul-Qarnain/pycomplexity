@@ -1,5 +1,5 @@
 """
-pycomplexity.detectors.recursion_detector
+bigopy.detectors.recursion_detector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Detects recursive function calls within a function body and classifies
 the recursion pattern:
@@ -24,7 +24,7 @@ from __future__ import annotations
 import ast
 from typing import List, Optional, Set
 
-from pycomplexity.models import RecursionInfo
+from bigopy.models import RecursionInfo
 
 
 # ---------------------------------------------------------------------------

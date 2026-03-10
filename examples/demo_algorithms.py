@@ -2,7 +2,7 @@
 examples/demo_algorithms.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A showcase of algorithms at every complexity class.
-Run:  pycomplexity analyze examples/demo_algorithms.py --verbose
+Run:  bigopy analyze examples/demo_algorithms.py --verbose
 """
 
 

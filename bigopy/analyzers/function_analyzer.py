@@ -1,5 +1,5 @@
 """
-pycomplexity.analyzers.function_analyzer
+bigopy.analyzers.function_analyzer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Orchestrates the full analysis pipeline per function:
 AST node → LoopDetector → RecursionDetector → GraphDetector
@@ -10,12 +10,12 @@ from __future__ import annotations
 import ast
 from typing import Optional
 
-from pycomplexity.analyzers.estimator import ComplexityEstimator
-from pycomplexity.detectors.builtin_detector import find_known_calls
-from pycomplexity.detectors.loop_detector import LoopDetector
-from pycomplexity.detectors.recursion_detector import RecursionDetector
-from pycomplexity.detectors.graph_detector import detect_graph_traversal
-from pycomplexity.models import FunctionResult
+from bigopy.analyzers.estimator import ComplexityEstimator
+from bigopy.detectors.builtin_detector import find_known_calls
+from bigopy.detectors.loop_detector import LoopDetector
+from bigopy.detectors.recursion_detector import RecursionDetector
+from bigopy.detectors.graph_detector import detect_graph_traversal
+from bigopy.models import FunctionResult
 
 
 class FunctionAnalyzer:

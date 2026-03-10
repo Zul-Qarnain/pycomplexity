@@ -1,5 +1,5 @@
 """
-pycomplexity.models
+bigopy.models
 ~~~~~~~~~~~~~~~~~~~
 Data models representing complexity classes, analysis results,
 and evidence collected during AST traversal.

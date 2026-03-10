@@ -1,5 +1,5 @@
 """
-pycomplexity.detectors.builtin_detector
+bigopy.detectors.builtin_detector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Maps calls to well-known Python builtins and standard-library functions
 to their documented time complexities.
@@ -18,7 +18,7 @@ from __future__ import annotations
 import ast
 from typing import Dict, List, Optional, Tuple
 
-from pycomplexity.models import Complexity
+from bigopy.models import Complexity
 
 
 # ---------------------------------------------------------------------------

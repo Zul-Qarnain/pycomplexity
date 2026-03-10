@@ -1,6 +1,6 @@
 """
 Graph traversal examples — DFS, BFS, Dijkstra
-Run: pycomplexity analyze examples/graph_examples.py --verbose
+Run: bigopy analyze examples/graph_examples.py --verbose
 """
 import heapq
 from collections import deque

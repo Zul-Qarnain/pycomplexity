@@ -1,5 +1,5 @@
 """
-pycomplexity.detectors.loop_detector
+bigopy.detectors.loop_detector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Detects for/while loops and classifies each one.
 Now includes range-power analysis to distinguish:
@@ -10,8 +10,8 @@ Now includes range-power analysis to distinguish:
 from __future__ import annotations
 import ast
 from typing import List, Set
-from pycomplexity.models import LoopInfo
-from pycomplexity.detectors.range_analyzer import get_range_power
+from bigopy.models import LoopInfo
+from bigopy.detectors.range_analyzer import get_range_power
 
 _INPUT_SIZE_CALLS: Set[str] = {"len", "range", "enumerate", "zip"}
 

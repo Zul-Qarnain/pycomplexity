@@ -18,10 +18,10 @@ import pytest
 # Make sure the package is importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
-from pycomplexity import analyze_source, Complexity
-from pycomplexity.analyzers.function_analyzer import FunctionAnalyzer
-from pycomplexity.detectors.loop_detector import LoopDetector
-from pycomplexity.detectors.recursion_detector import RecursionDetector
+from bigopy import analyze_source, Complexity
+from bigopy.analyzers.function_analyzer import FunctionAnalyzer
+from bigopy.detectors.loop_detector import LoopDetector
+from bigopy.detectors.recursion_detector import RecursionDetector
 import tests.fixtures.algorithms as alg_module
 
 

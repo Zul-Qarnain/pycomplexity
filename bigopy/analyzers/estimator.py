@@ -1,5 +1,5 @@
 """
-pycomplexity.analyzers.estimator
+bigopy.analyzers.estimator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Core estimation engine.
 Now uses range_power to correctly detect:
@@ -9,7 +9,7 @@ Now uses range_power to correctly detect:
 
 from __future__ import annotations
 from typing import List, Tuple, Optional
-from pycomplexity.models import (
+from bigopy.models import (
     Complexity, Evidence, FunctionResult, LoopInfo, RecursionInfo,
 )
 

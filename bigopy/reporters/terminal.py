@@ -1,11 +1,11 @@
 """
-pycomplexity.reporters.terminal
+bigopy.reporters.terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Color-coded terminal output. Shows O(V+E) when graph traversal detected.
 """
 from __future__ import annotations
 import sys
-from pycomplexity.models import Complexity, FunctionResult, ModuleResult
+from bigopy.models import Complexity, FunctionResult, ModuleResult
 
 _RESET   = "\033[0m"
 _BOLD    = "\033[1m"
