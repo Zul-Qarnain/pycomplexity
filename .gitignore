@@ -17,7 +17,7 @@ env/
 .idea/
 *.swp
 
-# Testing
+# Testing artifacts
 .pytest_cache/
 .coverage
 htmlcov/
@@ -26,9 +26,10 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Scratch/test files (not part of the library)
-test_*.py
-prove_*.py
-verify_*.py
-fix_*.sh
-my_*.py
+# Scratch/personal test files in ROOT folder only
+/test_*.py
+/prove_*.py
+/verify_*.py
+/fix_*.sh
+/my_*.py
+/final_check.py
